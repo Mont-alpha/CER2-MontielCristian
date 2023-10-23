@@ -22,6 +22,10 @@ from core import views #toma las funciones que se contengan en views de la aplic
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index)
+    path('',views.index,name="inicio"),
+    path("<int:buscar>/",views.filtrar,name="filtrado")
 
 ]
+
+
+admin.site.index_title = "Administración"

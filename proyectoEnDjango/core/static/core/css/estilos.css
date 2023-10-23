@@ -1,4 +1,2 @@
-.img-fluid {
-width: 100px;
-height: 100px;
-}
+.carousel .carousel-indicators li {background-color: red;}
+.carousel .carousel-indicators li.active {background-color: blue;}
